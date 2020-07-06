@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="E:\WgWorkSpace\LearnOpenglProject\LearnOpengl\OpenglWork\dep\glfw-3.3.2\examples\heightmap.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\WgWorkSpace\LearnOpenglProject\LearnOpengl\OpenglWork\dep\glfw-3.3.2\deps\glad_gl.c">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="E:\WgWorkSpace\LearnOpenglProject\LearnOpengl\OpenglWork\dep\glfw-3.3.2\deps\glad\gl.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="E:\WgWorkSpace\LearnOpenglProject\LearnOpengl\OpenglWork\dep\glfw-3.3.2\examples\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="E:\WgWorkSpace\LearnOpenglProject\LearnOpengl\OpenglWork\dep\glfw-3.3.2\examples\glfw.rc">
+      <Filter>Source Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{998A7379-23EB-3DCC-8311-91A8223CFCF5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{61F9A38D-FA61-3A77-9E7F-E35E51280AA2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
