@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="..\dep\glad\src\glad.c" />
+    <ClCompile Include="Src\sample.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Src\sample.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="shader">
+      <UniqueIdentifier>{3a865547-99fa-40b3-b4d3-8f616d8921de}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
