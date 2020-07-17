@@ -1,0 +1,5 @@
+﻿  glad.c
+  sample.cpp
+E:\WgWorkSpace\LearnOpenglProject\LearnOpengl\OpenglWork\LessonOne\Src\sample.cpp(6,10): warning C4067: 预处理器指令后有意外标记 - 应输入换行符
+sample.obj : error LNK2001: 无法解析的外部符号 "public: __cdecl Shader::~Shader(void)" (??1Shader@@QEAA@XZ)
+E:\WgWorkSpace\LearnOpenglProject\LearnOpengl\OpenglWork\x64\Release\LessonOne.exe : fatal error LNK1120: 1 个无法解析的外部命令

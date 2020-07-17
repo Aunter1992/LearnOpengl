@@ -6,10 +6,19 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Src\sample.h" />
+    <ClInclude Include="Src\shader.h" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="shader">
       <UniqueIdentifier>{3a865547-99fa-40b3-b4d3-8f616d8921de}</UniqueIdentifier>
     </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="shader\fragment_fs.sc">
+      <Filter>shader</Filter>
+    </None>
+    <None Include="shader\vertex_vs.sc">
+      <Filter>shader</Filter>
+    </None>
   </ItemGroup>
 </Project>
