@@ -117,7 +117,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)dep\glfw-3.3.2\include;$(SolutionDir)dep\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)dep\glfw-3.3.2\include;$(SolutionDir)dep\glad\include;$(SolutionDir)dep\glm-0.9.9.8\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -136,7 +136,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>$(SolutionDir)dep\glfw-3.3.2\include;$(SolutionDir)dep\glad\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>$(SolutionDir)dep\glfw-3.3.2\include;$(SolutionDir)dep\glad\include;$(SolutionDir)dep\glm-0.9.9.8\glm;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -151,15 +151,31 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\dep\glad\src\glad.c" />
-    <ClCompile Include="Src\sample.cpp" />
+    <ClCompile Include="Renderer\IndexBuffer.cpp" />
+    <ClCompile Include="Renderer\Renderer.cpp" />
+    <ClCompile Include="Renderer\Shader.cpp" />
+    <ClCompile Include="Renderer\Texture.cpp" />
+    <ClCompile Include="Renderer\VertexArray.cpp" />
+    <ClCompile Include="Renderer\VertexBuffer.cpp" />
+    <ClCompile Include="Renderer\VertexBufferLayout.cpp" />
+    <ClCompile Include="Src\main.cpp" />
+    <ClCompile Include="Src\stb_image_implementation.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Src\sample.h" />
-    <ClInclude Include="Src\shader.h" />
+    <ClInclude Include="Renderer\IndexBuffer.h" />
+    <ClInclude Include="Renderer\Renderer.h" />
+    <ClInclude Include="Renderer\Shader.h" />
+    <ClInclude Include="Renderer\Texture.h" />
+    <ClInclude Include="Renderer\VertexArray.h" />
+    <ClInclude Include="Renderer\VertexBuffer.h" />
+    <ClInclude Include="Renderer\VertexBufferLayout.h" />
+    <ClInclude Include="Src\stb_image.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="shader\fragment_fs.sc" />
-    <None Include="shader\vertex_vs.sc" />
+    <Image Include="Resources\wall.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="shader\shader01.shader" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

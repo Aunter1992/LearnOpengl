@@ -2,23 +2,30 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <ClCompile Include="..\dep\glad\src\glad.c" />
-    <ClCompile Include="Src\sample.cpp" />
+    <ClCompile Include="Src\main.cpp" />
+    <ClCompile Include="Src\stb_image_implementation.cpp" />
+    <ClCompile Include="Renderer\IndexBuffer.cpp" />
+    <ClCompile Include="Renderer\Renderer.cpp" />
+    <ClCompile Include="Renderer\VertexArray.cpp" />
+    <ClCompile Include="Renderer\VertexBuffer.cpp" />
+    <ClCompile Include="Renderer\VertexBufferLayout.cpp" />
+    <ClCompile Include="Renderer\Texture.cpp" />
+    <ClCompile Include="Renderer\Shader.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Src\sample.h" />
-    <ClInclude Include="Src\shader.h" />
+    <ClInclude Include="Src\stb_image.h" />
+    <ClInclude Include="Renderer\IndexBuffer.h" />
+    <ClInclude Include="Renderer\Renderer.h" />
+    <ClInclude Include="Renderer\VertexArray.h" />
+    <ClInclude Include="Renderer\VertexBuffer.h" />
+    <ClInclude Include="Renderer\VertexBufferLayout.h" />
+    <ClInclude Include="Renderer\Texture.h" />
+    <ClInclude Include="Renderer\Shader.h" />
   </ItemGroup>
   <ItemGroup>
-    <Filter Include="shader">
-      <UniqueIdentifier>{3a865547-99fa-40b3-b4d3-8f616d8921de}</UniqueIdentifier>
-    </Filter>
+    <Image Include="Resources\wall.jpg" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="shader\fragment_fs.sc">
-      <Filter>shader</Filter>
-    </None>
-    <None Include="shader\vertex_vs.sc">
-      <Filter>shader</Filter>
-    </None>
+    <Text Include="shader\shader01.shader" />
   </ItemGroup>
 </Project>
